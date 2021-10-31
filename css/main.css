@@ -1,0 +1,651 @@
+/*
+Theme Name: gym pro
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Felipe Vargas
+Author URI: http://felipe.org/
+Description: A cool website.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: landin
+*/
+body{
+    background: #0A043C !important;
+}
+.navbar{
+    padding-right: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar:hover{
+    color:#FFE38E;
+  
+  }
+  
+  .hero{
+    height:40rem;
+  }
+  #planes{
+    color: #FFC107;
+  }
+  .texto-banner{
+    margin-top: 12rem;
+  }
+  .texto-banner h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+  }
+  .texto-banner p{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FFC107;
+  }
+  .texto-banner span{
+    color: white;
+    opacity: 63%;
+    font-size:0.9rem;
+    display: block;
+  }
+  .circulo{
+    width: 400px;
+    height:400px;
+    background:linear-gradient(#FFE3DE,#03506F);
+    border-radius: 50%;
+    position: relative;
+    margin-left: 8rem;
+  }
+  .imagen-banner{
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    margin-top: 4rem;
+  }
+  .circulo-pequeño{
+    width: 3rem;
+    height: 3rem;
+    background: #FFC107;
+    border-radius: 50%;
+    position: absolute;
+    left: 54rem;
+    z-index: 20;
+    top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 30px #FFC107;
+    transition: all 0.3s ease-in-out;
+  }
+  .circulo-pequeño:hover{
+    box-shadow: 0px 14px 30px #F9C423;
+  
+  }
+  .mensaje{
+    position: absolute;
+    padding: 1rem;
+    background: green;
+    top: 25rem;
+    left: 42rem;
+    z-index: 99999;
+    border-radius: 0.7rem;
+    background: rgba(255, 255, 255, .5);
+    -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+  }
+  .imagen{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    /* background-image: url('/img/persona.jpg'); */
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    top: -2rem;
+    border: 1px solid green;
+  }
+  .circulo-abajo{
+    width: 3rem;
+    height: 3rem;
+    background: #FFC107;
+    border-radius: 50%;
+    position: absolute;
+    left: 18rem;
+    z-index: 20;
+    top: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 10px 30px #FFC107;
+  }
+  .imagen-nosotros{
+    text-align: center;
+    position: absolute;
+  }
+  .imagen-nosotros img{
+    width: 17rem;
+  }
+  .nosotros{
+    height: 30rem;
+    position: relative;
+  }
+  #imagen-1{
+    position: absolute;
+    left: 13rem;
+  }
+  #imagen-2{
+    position: absolute;
+    top: 10rem;
+    left:5rem;
+  }
+  .tarjeta-nosotros{
+    position: absolute;
+    width: 14rem;
+    padding: 1.4rem;
+    background: #201b4a;
+    color: white;
+    top: 4rem;
+    left: 1rem;
+    border-radius: 0.8rem;
+    z-index:9;
+    box-shadow: 0 10px 30px black;
+  }
+  .tarjeta-nosotros span{
+    font-size:0.8rem;
+  }
+  .tarjeta-nosotros i{
+    color:#FFC107;
+  }
+  .tarjeta-tiempo i{
+    color:#FFC107;
+  }
+  .titulo-nosotros{
+    margin-top:11rem;
+  }
+  .titulo-nosotros h2{
+    font-weight: 700;
+    font-size:3.5rem;
+    color: #E5E5E5;
+  }
+  .titulo-nosotros p{
+    font-size:0.8rem;
+    opacity: 80%;
+    color: white;
+  }
+  .tarjeta-tiempo{
+    position: absolute;
+    width: 14rem;
+    padding: 1.4rem;
+    background: #201b4a;
+    color: white;
+    top: 14rem;
+    left: 20rem;
+    border-radius: 0.8rem;
+    z-index:9;
+    box-shadow: 0 10px 30px black;
+  }
+  .tarjeta-tiempo span{
+    font-size:0.8rem;
+  }
+  .acerca{
+    height: 35rem;
+  }
+  .imagen-acerca{
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .imagen-acerca img{
+    width:32rem;
+  }
+  .texto-acerca{
+    width: 15rem;
+    color: white;
+  
+  }
+  .texto-acerca h2{
+    font-size:1rem;
+    font-weight: 700;
+  
+  }
+  .texto-acerca span{
+    font-size:0.7rem;
+    color: #E5E5E5;
+    
+  }
+  .estrellas{
+    text-align: center;
+  }
+  .grafica{
+      background: #201b4a;
+      transform: translateY(-53px);
+      width: 26rem;
+      margin: auto;
+      height: 10rem;
+      padding:1rem;
+      border-radius:0.8rem;
+      box-shadow: 0 10px 30px black;
+  }
+  .smile-face{
+    text-align: center;
+    font-size: 4rem;
+    color: #FFC107;
+  }
+  .estrellas i{
+    color:#FFC107 ;
+  }
+  .programas{
+    height: 40rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .card{
+    margin-top: 1rem;
+    background-color: #201B4A  !important;
+    box-shadow:  0px 9px 32px -1px black;
+    transition: all 0.3s ease-out;
+    height: 23rem;
+    margin: auto;
+    padding:2rem;
+    border-radius:0.8rem;
+  }
+  .texto-programas{
+    margin-bottom:2rem;
+  }
+  .card-title{
+    color:white;
+  }
+  .card-text{
+    color: white;
+    text-align: left;
+    font-size:0.8rem;
+    opacity:80%;
+  }
+  .card img{
+    width: 9rem;
+    padding-top: 1rem;
+    margin: auto;
+  }
+  .footer{
+    margin-top: 4rem;
+    height: 14rem;
+    background-color: #030113;
+  }
+  .logo{
+    margin-top:5rem;
+    color: #C9C9C9;
+  }
+  .logo i{
+    color:#FFC107;
+  }
+  .logo-iconos{
+    text-align: center;
+    width:3rem;
+  }
+  .logo h2{
+    font-size:1.2rem;
+  }
+  .card-title h4{
+    font-size:1.3rem;
+    font-weight:700;
+  }
+  .programas--{
+    display: block;
+  }
+  #navbar{
+    background: #0A043C;
+  }
+  body{
+    background: #0A043C;
+    font-family: 'Poppins', sans-serif;
+  }
+  .nosotros{
+    margin-top: 3rem;
+    background: #060227;
+  }
+  #col-nosotros{
+    margin-top: 4rem;
+  }
+  .acerca{
+    background: #060227;
+  }
+  .texto-programas h2{
+    color: #E5E5E5;
+    font-size:3.5rem;
+    font-weight:700;
+  }
+  .navbar-brand{
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  }
+  .texto-banner button{
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 33%;
+    background: #FFC107;
+    border-radius: 1.3rem;
+    box-shadow: 0px 10px 30px #FFC107;
+    color: white;
+    transition:all 0.3s ease-in-out;
+  }
+  .texto-banner button:hover{
+  background: #FFD75E;
+  box-shadow: 0px 14px 30px #FFC107;
+  
+  }
+  .input-contacto textarea{
+    display: block;
+    margin: auto;
+      width: 50%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius:0.8rem;
+      border:none;
+      transition: all 0.3s ease-in-out;
+  }
+  .input-contacto textarea:hover{
+    box-shadow: 0px 10px 30px #FFC107;
+  
+  }
+  .input-contacto input{
+    display: block;
+    margin: auto;
+      width: 50%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.8rem;
+      border: none;
+    transition: all 0.3s ease-in-out;
+    }
+    .input-contacto input:hover{
+      box-shadow: 0px 10px 30px #FFC107;
+    }
+  .input-contacto button{
+    display: block;
+      margin: auto;
+      width: 50%;
+      outline: none;
+      border: none;
+      padding: 1rem;
+      background: #FFC107;
+      border-radius: 0.8rem;
+      color: white;
+      transition: all 0.3s ease-in-out;
+  }
+  .input-contacto button:hover{
+    box-shadow: 0px 10px 30px #FFC107;
+  
+  }
+  .texto-contacto{
+    text-align: center;
+  }
+  .texto-contacto h2{
+  color: #E5E5E5;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+  }
+  /* Media Queries */
+  @media screen and (min-width:701px) and (max-width:1100px){
+    .texto-banner{
+      margin-top:2rem;
+    }
+    .imagen-banner{
+      width:20rem;
+      height: 20rem;
+    }
+    .circulo{
+      width:20rem;
+      height: 20rem;
+    }
+    .circulo-pequeño{
+      left:13rem;
+      top:27rem;
+    }
+    .circulo-abajo{
+      top:13rem;
+      left:18rem;
+    }
+    .mensaje{
+      top: 44rem;
+      left:11rem;
+    }
+    .hero{
+      height: 57rem;
+    }
+    .nosotros{
+      height: 49rem;
+    }
+    .titulo-nosotros{
+      text-align: center;
+    }
+    .acerca{
+      height: 64rem;
+    }
+    .card{
+      height: 24rem;
+    }
+    .footer{
+      text-align: center;
+      height: 28rem;
+    }
+    .logo-iconos{
+      margin:auto;
+    }
+    .logo{
+      margin-top: 2rem;
+    }
+    #imagen-1{
+      position: absolute;
+      left: 10rem;
+      margin-bottom: 3rem;
+      width: 22rem;
+    }
+    .tarjeta-nosotros{
+      top: 12rem;
+      left: 15rem;
+    }
+    .tarjeta-tiempo{
+      top: 30rem;
+      left: 15rem;
+    }
+    #imagen-2{
+      display: block;
+      margin: auto;
+      margin-bottom: 3rem;
+      left: 10rem;
+      top: 18rem;
+      width: 22rem;
+  
+    }
+    #imagen-2 img{
+      top: 10rem;
+    }
+    .imagen-nosotros{
+      position: none;
+    }
+  }
+  
+  @media screen and (max-width:700px){
+    .hero{
+      height: 44rem;
+    }
+    .texto-banner{
+      margin-top: 1rem;
+    }
+    .texto-banner h2{
+      font-size:2rem;
+    }
+    .texto-banner span{
+      font-size:0.9rem;
+    }
+    .texto-banner button{
+      width:45%;
+    }
+    .circulo{
+      width: 15rem;
+      height: 15rem;
+      margin: auto;
+    }
+    .imagen-banner{
+      width: 15rem;
+      height: 15rem;
+    }
+    .mensaje{
+      top: 41rem;
+      left: 7rem;
+    }
+    .circulo-pequeño{
+      left:5rem;
+      top: 31rem;
+    }
+    .circulo-abajo{
+      top:9rem;
+      left:13rem;
+    }
+    .titulo-nosotros{
+      margin-top:4rem;
+    }
+    #imagen-1{
+      display: block;
+      margin: auto;
+    }
+    #imagen-2{
+      display: block;
+      margin: auto;
+      margin-top: 4rem;
+      width: 17rem;
+    }
+    #col-nosotros{
+      display: block;
+    }
+    .tarjeta-nosotros{
+      top: 27rem;
+      left: 5rem;
+    }
+    .tarjeta-tiempo{
+      top: 43rem;
+      left: 5rem;
+    }
+    #imagen-1{
+      position: static;
+    }
+    .imagen-nosotros{
+      position: static;
+    }
+    #imagen-2{
+      position: static;
+    }
+    .nosotros{
+      height: 49rem;
+    }
+    .titulo-nosotros{
+      text-align: center;
+    }
+    .grafica{
+      transform: translateY(-21px);
+      width:19rem;
+      height: 11rem;
+    }
+    .imagen-acerca{
+      margin-top:1rem;
+    }
+    .imagen-acerca img{
+      width: 21rem;
+    }
+    .smile-face{
+      font-size: 3.4rem;
+      padding-left: 2rem;
+  }
+  .texto-acerca{
+    width: 11rem;
+  }
+  .acerca{
+    height: 43rem;
+  }
+  .titulo-nosotros h2{
+    font-size:2.4rem;
+  }
+  .programas{
+    height: 82rem;
+  }
+  .card{
+    margin-top: 1.3rem;
+  }
+  .card:hover{
+    transform: scale(0.9);
+  }
+  .texto-programas h2{
+    font-size:2.4rem;
+  }
+  .texto-contacto h2{
+    font-size:2.4rem;
+  }
+  .input-contacto input{
+    width: 90%;
+  }
+  .input-contacto textarea{
+    width:90%;
+  }
+  .input-contacto button{
+    width:90%;
+  }
+  .footer{
+    margin-top: 4rem;
+    height: 27rem;
+    text-align: center;
+  }
+  .logo{
+    margin-top:2rem;
+  }
+  .logo-iconos{
+    margin:auto;
+  }
+  @media screen and (min-width:408px) and (max-width:420px){
+    .mensaje{
+      top:39rem;
+    }
+    .tarjeta-nosotros{
+      top: 26rem;
+      left: 6rem;
+    }
+    .tarjeta-tiempo{
+      top: 41rem;
+      left: 6rem;
+    }
+  }
+  /* Media Querie Iphone SE */
+  @media screen and (min-width:310px) and (max-width:325px){
+    .texto-banner button{
+      width: 50%;
+    }
+    .circulo-pequeño {
+      left: 5rem;
+      top: 29rem;
+  }
+  .mensaje {
+    top: 42rem;
+    left: 4rem;
+  }
+  .imagen-acerca img {
+    width: 17rem;
+  }
+  .grafica{
+    width: 16rem;
+    height: 12rem;
+  }
+  .texto-acerca {
+    width: 10rem;
+  }
+  
+  }
+  }
+  #particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  }
