@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GymPro</title>
-    <link rel="stylesheet" href="<?php	echo THEMEROOT; ?>/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="js/scrollreveal.js"></script>
-</head>
-<body>
-    <header>
-        <!-- <div id="particles-js"></div> -->
-        <nav class="navbar navbar-expand-lg" id="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">LOGO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <span class="navbar">Nosotros</span>
-                <span class="navbar">Acerca</span>
-                <span class="navbar" id="planes">Planes</span>
-                <span class="navbar">Contacto</span>
-              </div>
-            </div>
-          </nav>
-    </header>    
+<?php get_header(); ?> 
 <main>
     <section class="hero">
         <div class="container">
@@ -188,43 +157,4 @@
         </div>
     </section>
 </main>
-<footer class="footer">
-<div class="container">
-    <div class="row">
-        <div class="col-xl-3">
-            <div class="logo">
-                <h2>LOGO</h2>
-                <div class="logo-iconos">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-twitter"></i>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3">
-            <div class="logo">
-                <h2>Nosotros</h2>
-                <span>Sobre nosotros</span>
-            </div>
-        </div>
-        <div class="col-xl-3">
-            <div class="logo">
-                <h2>Acerca</h2>
-                <span>Acerca</span>
-            </div>
-        </div>
-        <div class="col-xl-3">
-            <div class="logo">
-                <h2>Programas</h2>
-                <span class="programas--">Programa de Yoga</span>
-                <span class="programas--">Programa de cardio</span>
-                <span class="programas--">Programa de Halterofilia</span>
-            </div>
-        </div>
-    </div>
-</div>
-</footer>
-<script src="js/index.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>

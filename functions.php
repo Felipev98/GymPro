@@ -61,3 +61,12 @@ function gympro_custom_theme_features()  {
 add_action( 'after_setup_theme', 'gympro_custom_theme_features' );
 
 }
+/*Registrando y cargando hojas de estilos
+*  
+*/
+require_once('includes/scripts-styles.php');
+
+/*Registrando Zonas de menú
+*  
+*/
+require_once('includes/menus.php');
