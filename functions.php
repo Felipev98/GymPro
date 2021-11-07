@@ -70,3 +70,10 @@ require_once('includes/scripts-styles.php');
 *  
 */
 require_once('includes/menus.php');
+/*Registrando Zonas de menú
+*  
+*/
+require_once('includes/sidebars.php');
+/*Registrando Zonas de Widgets
+*  
+*/

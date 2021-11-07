@@ -11,24 +11,19 @@
             </div>
         </div>
         <div class="col-xl-3">
-            <div class="logo">
-                <h2>Nosotros</h2>
-                <span>Sobre nosotros</span>
-            </div>
+        <?php if( is_active_sidebar('sidebar-footer-izq')){
+            dynamic_sidebar('sidebar-footer-izq');
+        } ?>
         </div>
         <div class="col-xl-3">
-            <div class="logo">
-                <h2>Acerca</h2>
-                <span>Acerca</span>
-            </div>
+        <?php if( is_active_sidebar('sidebar-footer-cent')){
+            dynamic_sidebar('sidebar-footer-cent');
+        } ?>
         </div>
         <div class="col-xl-3">
-            <div class="logo">
-                <h2>Programas</h2>
-                <span class="programas--">Programa de Yoga</span>
-                <span class="programas--">Programa de cardio</span>
-                <span class="programas--">Programa de Halterofilia</span>
-            </div>
+            <?php if( is_active_sidebar('sidebar-footer-der')){
+            dynamic_sidebar('sidebar-footer-der');
+        } ?>
         </div>
     </div>
 </div>

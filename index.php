@@ -3,12 +3,12 @@
     <section class="hero">
         <div class="container">
             <div class="row">
+                <?php if (have_posts() ): while(have_posts()): the_post(); ?>
                 <div class="col-xl-6">
                     <div class="texto-banner">
-                        <h2>ENTRENA EN EL MEJOR</h2>
-                        <p>LUGAR</p>
-                        <span>En bla bla tenemos los mejores sitios y ubicados en paises de primer nivel, para que tus excursiones sean lo más placenteras y divertidas posibles.</span>
-                        <button>Quiero entrar</button>
+                        <h2><?php the_title();?></h2>
+                        <span><?php the_content();?></span>
+                        <button><?php _e('QUIERO ENTRAR','gympro')?></button>
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -29,6 +29,10 @@
                     
                     </div>
                 </div>
+                <?php endwhile; else:?>
+                    <?php get_template_part('template-parts/content','nopost');?>
+
+                <?php endif;?>	
             </div>
         </div>
     </section>

@@ -40,16 +40,10 @@ body{
     color: white;
   }
   .texto-banner p{
-    font-size: 3rem;
-    font-weight: 800;
-    color: #FFC107;
+    font-size: 1rem;
+    color: #ffff;
   }
-  .texto-banner span{
-    color: white;
-    opacity: 63%;
-    font-size:0.9rem;
-    display: block;
-  }
+
   .circulo{
     width: 400px;
     height:400px;
