@@ -24,7 +24,12 @@
                         <div class="circulo-abajo">
                             <span>🏋🏻</span>
                         </div>
-                    <div class="imagen-banner" style="background-image: url(<?php echo IMAGES;?>/ChicaDeporte.png)">
+                        <?php if (has_post_thumbnail()):?>
+                            <?php $banner_image = wp_get_attachment_image_src(get_post_thumbnail_id(),'full');?>
+                 <div class="imagen-banner" style="background-image: url(<?php echo $banner_image[0];?>"> 
+                    <?php else:?>
+                     <div class="imagen-banner" style="background-image: url(<?php echo IMAGES;?>/ChicaDeporte.png)"> -
+                        <?php endif?>
                     </div>
                     
                     </div>

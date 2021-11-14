@@ -35,7 +35,7 @@ function gympro_custom_theme_features()  {
 	add_theme_support( 'post-formats', array( 'video', 'audio' ) );
 
 	// Add theme support for Featured Images
-	add_theme_support( 'post-thumbnails', array( '' ) );
+	add_theme_support( 'post-thumbnails' );
 
 	// Add theme support for Custom Background
 	$background_args = array(
