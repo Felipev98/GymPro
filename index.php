@@ -6,9 +6,11 @@
                 <?php if (have_posts() ): while(have_posts()): the_post(); ?>
                 <div class="col-xl-6">
                     <div class="texto-banner">
-                        <h2><?php the_title();?></h2>
-                        <span><?php the_content();?></span>
-                        <button><?php _e('QUIERO ENTRAR','gympro')?></button>
+                        <h2><?php the_field('titulo_de_banner')?></h2>
+                        <span><?php the_field('subtitulo_de_banner')?></span>
+                        <?php if(get_field('deseas_boton') == 'Sí'):?>
+                      <a href="<?php the_field('enlace_del_boton')?>"><button><?php the_field('texto_del_boton')?></button></a>  
+                        <?php endif?>
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -17,8 +19,8 @@
                     </div>
                     <div class="mensaje">
                         <div class="imagen" style="background-image: url(<?php echo IMAGES;?>/persona.jpg)"></div>
-                        <span>Andres fernandez</span>
-                        <p>Me encanta este gym 💪🏻</p>
+                        <span><?php the_field('nombre_gym')?></span>
+                        <p><?php the_field('texto_gym')?></p>
                     </div>
                     <div class="circulo">
                         <div class="circulo-abajo">

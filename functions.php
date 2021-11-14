@@ -77,3 +77,7 @@ require_once('includes/sidebars.php');
 /*Registrando Zonas de Widgets
 *  
 */
+require_once('includes/personalizador-tema.php');
+/*Registrando Zonas de Widgets
+*  
+*/
