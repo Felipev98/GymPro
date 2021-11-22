@@ -43,13 +43,40 @@
             </div>
         </div>
     </section>
+    <?php
+                $options = get_theme_mod('gympro_settings');
+                //Sección Titulo Nosotros
+                if(!empty($options['nosotros_section_title'])){
+                    $titulo_nosotros = $options['nosotros_section_title'];
+                }
+                if(isset($options['show_nosotros_section'])){
+                    $show_nosotros_section = $options['show_nosotros_section'];
+                }else{
+                    $show_nosotros_section = false;
+                }
+                //Sección Titulo Acerca
+                if(!empty($options['acerca_section_title'])){
+                $titulo_acerca = $options['acerca_section_title'];
+                }
+                if(isset($options['show_acerca_section'])){
+                $show_acerca_section = $options['show_acerca_section'];
+            }else{
+                $show_acerca_section = false;
+            }
+                ?>
+<?php if( $show_nosotros_section == true):?>
     <section class="nosotros">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
                     <div class="titulo-nosotros">
-                        <h2>NOSOTROS</h2>
+                        <?php if(isset($titulo_nosotros)):?>
+                        <h2><?php echo $titulo_nosotros;?></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio, auctor vitae faucibus fringilla.</p>
+                        <?php else:?>
+                            <h2>NOSOTROS</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio, auctor vitae faucibus fringilla.</p>
+                        <?php endif;?>
                     </div>
                 </div>
                 <div class="col-xl-6" id="col-nosotros">
@@ -69,18 +96,25 @@
             </div>
         </div>
     </section>
+    <?php endif;?>
+    <?php if( $show_acerca_section == true):?>
     <section class="acerca">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
                     <div class="titulo-nosotros">
-                        <h2>ACERCA</h2>
+                    <?php if(isset( $titulo_acerca)):?>
+                        <h2><?php echo  $titulo_acerca;?></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio, auctor vitae faucibus fringilla.</p>
+                        <?php else:?>
+                            <h2>ACERCA</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio, auctor vitae faucibus fringilla.</p>
+                        <?php endif;?>
                     </div>
                 </div>
                 <div class="col-xl-6">
                     <div class="imagen-acerca">
-                        <img src="<?php IMAGES;?>/pesas.png" alt="pesas.png">
+                        <img src="<?php echo IMAGES;?>/pesas.png" alt="pesas.png">
                     </div>
                     <div class="container">
                     <div class="grafica">
@@ -112,41 +146,34 @@
             </div>
         </div>
     </section>
+    <?php endif;?>
     <section class="programas">
         <div class="container">
             <div class="texto-programas">
                 <h2>PROGRAMAS</h2>
             </div>
-                <div class="row">
+            
+            <?php $planes = new WP_query(array(
+                'post_type' => 'nosotross',
+                'posts_per_page' => 3,
+            ));?>
+        <?php if( $planes ->have_posts() && $planes ->post_count > 2  ):?>
+        <div class="row">
+
+    <?php while($planes ->have_posts()): $planes -> the_post();?>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <img src="<?php echo IMAGES;?>/yoga.png" alt="yoga.png">
-                        <h4 class="card-title">This is Card #1</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card  ">
+                    <?php if (has_post_thumbnail()):?>
+                        <img src="<?php the_post_thumbnail_url('nosotros_programas');?>" class="card-img-top" alt="...">
+                    <?php endif;?>
+                         <h4 class="card-title"><?php the_title();?></h4>
+                         <p class="card-text"><?php the_excerpt();?></p>
 
-                    </div>
+                         </div>
                 </div>
-        
-                <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12">
-                    <div class="card card-inverse card-primary text-center">
-                        <img src="<?php echo IMAGES;?>/cardio.png" alt="cardio.png">
-                        <h4 class="card-title">This is Card #2</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12">
-                        <div class="card card-inverse card-primary text-center">
-                            <img src="<?php echo IMAGES;?>/levantarpesas.png" alt="levantar.png">
-                            <h4 class="card-title">This is Card #2</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    
-                        </div>
-                        </div>
-                </div>
-</div>
-</div>
+        <?php endwhile;?>
     </section>
+    <?php endif;?>
     <section class="contacto">
         <div class="container">
             <div class="row">

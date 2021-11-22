@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-11-21 19:49-0400\n"
+"PO-Revision-Date: 2021-11-21 19:54-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;gettext\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/menus.php:10
+msgid "Menu Principal"
+msgstr ""
+
+#: includes/personalizador-tema.php:13 includes/personalizador-tema.php:20
+msgid "Footer"
+msgstr "Footer"
+
+#: includes/personalizador-tema.php:14
+msgid "Opciones del Footer"
+msgstr "Footer Options"
+
+#: includes/personalizador-tema.php:21
+msgid "Opciones del footer"
+msgstr "Footer options"
+
+#: includes/personalizador-tema.php:30
+msgid "Enlace Facebook"
+msgstr "Facebook Link"
+
+#: includes/personalizador-tema.php:31
+msgid "Escribe la URL de tu facebook"
+msgstr "Enter the URL of your facebook"
+
+#: includes/personalizador-tema.php:39
+msgid "Enlace Twitter"
+msgstr "Twitter link"
+
+#: includes/personalizador-tema.php:40
+msgid "Escribe la URL de tu twitter"
+msgstr "Enter the URL of your twitter"
+
+#: includes/personalizador-tema.php:47
+msgid "Encabezado"
+msgstr "Header"
+
+#: includes/personalizador-tema.php:48
+msgid "Opciones del encabezado normal"
+msgstr "Normal header options"
+
+#: includes/personalizador-tema.php:58
+msgid "logo"
+msgstr "logo"
+
+#: includes/personalizador-tema.php:59
+msgid "Selecciona tu logo "
+msgstr "select your logo"
+
+#: includes/personalizador-tema.php:68
+msgid "Página de Inicio"
+msgstr "Home page"
+
+#: includes/personalizador-tema.php:69
+msgid "Opciones de la página de inicio"
+msgstr "Options from homepage"
+
+#: includes/personalizador-tema.php:75
+msgid "Nosotros"
+msgstr "Us"
+
+#: includes/personalizador-tema.php:76
+msgid "Opciones de sección Nosotros"
+msgstr "Option about us section"
+
+#: includes/personalizador-tema.php:85
+msgid "Mostrar sección de Nosotros"
+msgstr "show section about us"
+
+#: includes/personalizador-tema.php:95
+msgid "Titulo de sección Nosotros"
+msgstr "title section about us"
+
+#: includes/personalizador-tema.php:104
+msgid "Acerca"
+msgstr "About"
+
+#: includes/personalizador-tema.php:105
+msgid "Opciones de sección articulos"
+msgstr ""
+
+#: includes/personalizador-tema.php:114
+msgid "Mostrar sección de Acerca"
+msgstr "show about section"
+
+#: includes/personalizador-tema.php:124
+msgid "Titulo de sección Acerca"
+msgstr "title about section"
+
+#: includes/sidebars.php:11 includes/sidebars.php:29
+msgid "Pie de página zona izquierda"
+msgstr ""
+
+#: includes/sidebars.php:13
+msgid "Widget en pie de página zona izquierda"
+msgstr ""
+
+#: includes/sidebars.php:20
+msgid "Pie de página zona central"
+msgstr ""
+
+#: includes/sidebars.php:22
+msgid "Widget en pie de página zona central"
+msgstr ""
+
+#: includes/sidebars.php:31
+msgid "Widget en pie de página zona derecha"
+msgstr ""
+
+#: template-parts/content-nopost.php:2
+msgid "No hay contenido para mostrar"
+msgstr ""

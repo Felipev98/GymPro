@@ -43,7 +43,9 @@ body{
     font-size: 1rem;
     color: #ffff;
   }
-
+.texto-banner span{
+  color: #A4A2B7;
+}
   .circulo{
     width: 400px;
     height:400px;
@@ -51,22 +53,24 @@ body{
     border-radius: 50%;
     position: relative;
     margin-left: 8rem;
+    top: -5rem;
   }
   .imagen-banner{
-    height: 25rem;
+    height: 25.5rem;
     background-size: cover;
     background-position: center;
-    margin-top: 4rem;
+    position: relative;
+    top: -3.5rem;
   }
   .circulo-pequeño{
     width: 3rem;
     height: 3rem;
     background: #FFC107;
     border-radius: 50%;
-    position: absolute;
-    left: 54rem;
+    position: relative;
+    left: 11rem;
     z-index: 20;
-    top: 8rem;
+    top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,11 +82,12 @@ body{
   
   }
   .mensaje{
-    position: absolute;
+    position: relative;
     padding: 1rem;
     background: green;
-    top: 25rem;
-    left: 42rem;
+    top: 13rem;
+    left: -1rem;
+    width: 40%;
     z-index: 99999;
     border-radius: 0.7rem;
     background: rgba(255, 255, 255, .5);
@@ -106,10 +111,10 @@ body{
     height: 3rem;
     background: #FFC107;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     left: 18rem;
     z-index: 20;
-    top: 22rem;
+    top: 21rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,18 +243,23 @@ body{
   .card{
     margin-top: 1rem;
     background-color: #201B4A  !important;
-    box-shadow:  0px 9px 32px -1px black;
     transition: all 0.3s ease-out;
     height: 23rem;
     margin: auto;
     padding:2rem;
-    border-radius:0.8rem;
+    border-radius:1.2rem !important;
+
   }
   .texto-programas{
     margin-bottom:2rem;
   }
   .card-title{
-    color:white;
+    color:#C9C9C9;
+    font-weight: 700;
+  }
+  p{
+    color: #C9C9C9;
+    text-align: left;
   }
   .card-text{
     color: white;
@@ -268,8 +278,11 @@ body{
     background-color: #030113;
   }
   .logo{
-    margin-top:5rem;
-    color: #C9C9C9;
+    margin-top:3rem;
+  }
+  .logo img{
+    width: 5rem;
+    margin-left: 5.5rem;
   }
   .logo i{
     color:#FFC107;
@@ -277,6 +290,7 @@ body{
   .logo-iconos{
     text-align: center;
     width:3rem;
+    margin: auto;
   }
   .logo h2{
     font-size:1.2rem;
@@ -310,10 +324,9 @@ body{
     font-size:3.5rem;
     font-weight:700;
   }
-  .navbar-brand{
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 700;
+  .navbar-brand {
+    width:5rem;
+    margin-left: 5rem;
   }
   .texto-banner button{
     margin-top: 1rem;
@@ -397,6 +410,7 @@ ul li a:hover{
   color: #FFDF81;
 
 }
+
   /* Media Queries */
   @media screen and (min-width:701px) and (max-width:1100px){
     .texto-banner{

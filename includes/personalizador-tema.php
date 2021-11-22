@@ -64,9 +64,71 @@ $wp_customize-> add_control(new WP_customize_Image_Control($wp_customize,'logo',
 
 
 
+$wp_customize->add_panel('gympro_home', array(
+    'title' => __('Página de Inicio', 'gympro'),
+    'description' => __('Opciones de la página de inicio', 'gympro'),
+    'priority' => 41,
+));
+// Sección Nosotros
+
+$wp_customize->add_section('gympro_nosotros', array(
+    'title' => __('Nosotros', 'gympro'),
+    'description' => __('Opciones de sección Nosotros', 'gympro'),
+    'priority' => 10,
+    'panel' => 'gympro_home',
+));
+$wp_customize->add_setting('gympro_settings[show_nosotros_section]', array(
+    'default' => '',
+    'type' => 'theme_mod',
+));
+$wp_customize-> add_control('show_nosotros_section',array(
+    'label' => __('Mostrar sección de Nosotros', 'gympro'),
+    'section' => 'gympro_nosotros',
+    'settings' => 'gympro_settings[show_nosotros_section]',
+    'type' => 'checkbox'
+));
+$wp_customize->add_setting('gympro_settings[nosotros_section_title]', array(
+    'default' => '',
+    'type' => 'theme_mod',
+));
+$wp_customize-> add_control('nosotros_section_title',array(
+    'label' => __('Titulo de sección Nosotros', 'gympro'),
+    'section' => 'gympro_nosotros',
+    'settings' => 'gympro_settings[nosotros_section_title]',
+));
 
 
+
+
+$wp_customize->add_section('gympro_aceca', array(
+    'title' => __('Acerca', 'gympro'),
+    'description' => __('Opciones de sección articulos', 'gympro'),
+    'priority' => 20,
+    'panel' => 'gympro_home',
+));
+$wp_customize->add_setting('gympro_settings[show_acerca_section]', array(
+    'default' => '',
+    'type' => 'theme_mod',
+));
+$wp_customize-> add_control('show_acerca_section',array(
+    'label' => __('Mostrar sección de Acerca', 'gympro'),
+    'section' => 'gympro_aceca',
+    'settings' => 'gympro_settings[show_acerca_section]',
+    'type' => 'checkbox'
+));
+$wp_customize->add_setting('gympro_settings[acerca_section_title]', array(
+    'default' => '',
+    'type' => 'theme_mod',
+));
+$wp_customize-> add_control('acerca_section_title',array(
+    'label' => __('Titulo de sección Acerca', 'gympro'),
+    'section' => 'gympro_aceca',
+    'settings' => 'gympro_settings[acerca_section_title]',
+));
 }
+
+
+
 //Enlace Facebook
 
 
