@@ -10,9 +10,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
 Text Domain: landin
 */
-
+a{
+  text-decoration: none;
+}
 body{
-    background: #0A043C !important;
+    background: #0A043C ;
 }
 .navbar{
     padding-right: 2rem;
@@ -153,7 +155,7 @@ body{
     box-shadow: 0 10px 30px black;
   }
   .tarjeta-nosotros span{
-    font-size:0.8rem;
+    font-size:0.9rem;
   }
   .tarjeta-nosotros i{
     color:#FFC107;
@@ -173,6 +175,7 @@ body{
     font-size:0.8rem;
     opacity: 80%;
     color: white;
+    text-align: center;
   }
   .tarjeta-tiempo{
     position: absolute;
@@ -274,7 +277,7 @@ body{
   }
   .footer{
     margin-top: 4rem;
-    height: 14rem;
+    height: auto;
     background-color: #030113;
   }
   .logo{
@@ -408,33 +411,42 @@ ul li a{
 }
 ul li a:hover{
   color: #FFDF81;
-
 }
-
+#block-2{
+  margin-top: 2rem;
+}
+#block-3{
+  margin-top: 2rem;
+}
+#block-4{
+margin-top: 2rem;
+}
   /* Media Queries */
-  @media screen and (min-width:701px) and (max-width:1100px){
+
+  @media screen and (min-width:701px) and (max-width:1023px){
     .texto-banner{
-      margin-top:2rem;
+      margin-top:7rem;
     }
     .imagen-banner{
       width:20rem;
       height: 20rem;
+      top: -2.9rem;
     }
     .circulo{
       width:20rem;
       height: 20rem;
     }
     .circulo-pequeño{
-      left:13rem;
-      top:27rem;
+      left:11rem;
+      top:4rem;
     }
     .circulo-abajo{
-      top:13rem;
-      left:18rem;
+      top:16rem;
+      left:15rem;
     }
     .mensaje{
-      top: 44rem;
-      left:11rem;
+      top: 17rem;
+      left:3rem;
     }
     .hero{
       height: 57rem;
@@ -444,6 +456,7 @@ ul li a:hover{
     }
     .titulo-nosotros{
       text-align: center;
+      margin-top: 5rem;
     }
     .acerca{
       height: 64rem;
@@ -453,7 +466,6 @@ ul li a:hover{
     }
     .footer{
       text-align: center;
-      height: 28rem;
     }
     .logo-iconos{
       margin:auto;
@@ -468,12 +480,12 @@ ul li a:hover{
       width: 22rem;
     }
     .tarjeta-nosotros{
-      top: 12rem;
-      left: 15rem;
+      top: 6rem;
+      left: 14rem;
     }
     .tarjeta-tiempo{
-      top: 30rem;
-      left: 15rem;
+      top: 24rem;
+      left: 14rem;
     }
     #imagen-2{
       display: block;
@@ -490,6 +502,84 @@ ul li a:hover{
     .imagen-nosotros{
       position: none;
     }
+    #logo-navbar{
+      display: none;
+    }
+    .card{
+      height: auto;
+    }
+    .logo img{
+      margin-left: 0rem;
+    }
+    div.widget.widget_block.widget_text {
+      text-align: center;
+      width: 26%;
+      margin: auto;
+  }
+  div.widget.widget_block.widget_text p {
+text-align: center;
+
+  }
+  }
+  @media screen and (min-width:1024px) and (max-width:1025px){
+    #logo-navbar{
+      display: none;
+    }
+    .menu-menu-principal-container{
+      display: none;
+    }
+    .hero{
+      height: 100vh;
+    }
+    .texto-banner{
+      margin-top: 20rem;
+    }
+    #boton-hero{
+      display: block;
+    }
+    .titulo-nosotros{
+      text-align: center;
+      margin-top: 2rem;
+    }
+    #imagen-1{
+      left: 20rem;
+    }
+    .texto-programas h2{
+      margin-top: 10rem;
+    }
+    .titulo-nosotros h2:last-child{
+      margin-top: 10rem;
+    }
+    .tarjeta-nosotros{
+      left: 22rem;
+    }
+    #imagen-2{
+      left: 20rem;
+    }
+    .tarjeta-tiempo{
+      left: 22rem;
+    }
+    #titulo-acerca{
+      margin-top: 6rem;
+    }
+    .card{
+      height: auto;
+    }
+    .footer{
+      text-align: center;
+    }
+    .logo img{
+      margin-left: 0rem;
+    }
+    div.widget.widget_block.widget_text {
+      text-align: center;
+      width: 26%;
+      margin: auto;
+  }
+  div.widget.widget_block.widget_text p {
+    text-align: center;
+    
+      }
   }
   
   @media screen and (max-width:700px){
@@ -497,7 +587,7 @@ ul li a:hover{
       height: 44rem;
     }
     .texto-banner{
-      margin-top: 1rem;
+      margin-top: 4rem;
     }
     .texto-banner h2{
       font-size:2rem;
@@ -516,18 +606,20 @@ ul li a:hover{
     .imagen-banner{
       width: 15rem;
       height: 15rem;
+      top: -3rem;
     }
     .mensaje{
-      top: 41rem;
-      left: 7rem;
+      top: 12rem;
+      left: 1rem;
+      width: 55%;
     }
     .circulo-pequeño{
       left:5rem;
-      top: 31rem;
+      top: 4rem;
     }
     .circulo-abajo{
-      top:9rem;
-      left:13rem;
+      top:12rem;
+      left:11rem;
     }
     .titulo-nosotros{
       margin-top:4rem;
@@ -546,11 +638,11 @@ ul li a:hover{
       display: block;
     }
     .tarjeta-nosotros{
-      top: 27rem;
+      top: 21rem;
       left: 5rem;
     }
     .tarjeta-tiempo{
-      top: 43rem;
+      top: 31rem;
       left: 5rem;
     }
     #imagen-1{
@@ -618,7 +710,6 @@ ul li a:hover{
   }
   .footer{
     margin-top: 4rem;
-    height: 27rem;
     text-align: center;
   }
   .logo{
@@ -627,45 +718,69 @@ ul li a:hover{
   .logo-iconos{
     margin:auto;
   }
-  @media screen and (min-width:408px) and (max-width:420px){
-    .mensaje{
-      top:39rem;
-    }
-    .tarjeta-nosotros{
-      top: 26rem;
-      left: 6rem;
-    }
-    .tarjeta-tiempo{
-      top: 41rem;
-      left: 6rem;
-    }
+  #logo-navbar{
+    display: none;
   }
-  /* Media Querie Iphone SE */
-  @media screen and (min-width:310px) and (max-width:325px){
-    .texto-banner button{
-      width: 50%;
+  #boton-hero{
+    display: block;
+  }
+  div.widget.widget_block.widget_text{
+    text-align: center;
+  }
+  .logo img{
+    margin-left: 0rem;
+  }
+  .col-xl-3{
+    text-align: center;
+  }
+  div.widget.widget_block.widget_text {
+    text-align: center;
+    width: 26%;
+    margin: auto;
+}
+div.widget.widget_block.widget_text p {
+  text-align: center;
+  
     }
-    .circulo-pequeño {
-      left: 5rem;
-      top: 29rem;
+}
+   /* Media Querie Iphone SE */
+   @media screen and (min-width:240px) and (max-width:340px){
+    .texto-banner{
+      margin-top: 0rem;
+    }
+  .texto-banner h2{
+    font-size: 1.5rem;
   }
-  .mensaje {
-    top: 42rem;
-    left: 4rem;
+  .texto-banner span{
+    font-size: 0.7rem;
   }
-  .imagen-acerca img {
-    width: 17rem;
+  #boton-hero{
+    font-size: 0.8rem;
+  }
+  .mensaje{
+    top: 11rem;
+    left: 0rem;
+    width: 59%;
   }
   .grafica{
-    width: 16rem;
-    height: 12rem;
+    width: 15rem;
+    height: auto;
   }
-  .texto-acerca {
-    width: 10rem;
+  .texto-acerca h2{
+    font-size: 0.7rem;
   }
+  .estrellas{
+    font-size: 0.7rem;
+  }
+  .smile-face{
+    margin-top: -1rem;
+  }
+  .imagen-acerca img{
+    width: 18rem;
+  }
+  }
+ 
   
-  }
-  }
   #particles-js{
   position: absolute;
   width: 100%;

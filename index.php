@@ -9,22 +9,22 @@
                         <h2><?php the_field('titulo_de_banner')?></h2>
                         <span><?php the_field('subtitulo_de_banner')?></span>
                         <?php if(get_field('deseas_boton') == 'Sí'):?>
-                      <a href="<?php the_field('enlace_del_boton')?>"><button><?php the_field('texto_del_boton')?></button></a>  
+                      <a id="boton-hero" href="<?php the_field('enlace_del_boton')?>"><button><?php the_field('texto_del_boton')?></button></a>  
                         <?php endif?>
                     </div>
                 </div>
                 <div class="col-xl-6">
                     <div class="circulo-pequeño">
-                        <span>💪🏻</span>
+                        <span><?php the_field('icono1')?></span>
                     </div>
                     <div class="mensaje">
-                        <div class="imagen" style="background-image: url(<?php echo IMAGES;?>/persona.jpg)"></div>
+                        <div class="imagen" style="background-image: url(<?php the_field('imagencomentario');?>)"></div>
                         <span><?php the_field('nombre_gym')?></span>
                         <p><?php the_field('texto_gym')?></p>
                     </div>
                     <div class="circulo">
                         <div class="circulo-abajo">
-                            <span>🏋🏻</span>
+                            <span><?php the_field('icono2')?></span>
                         </div>
                         <?php if (has_post_thumbnail()):?>
                             <?php $banner_image = wp_get_attachment_image_src(get_post_thumbnail_id(),'full');?>
@@ -72,7 +72,7 @@
                     <div class="titulo-nosotros">
                         <?php if(isset($titulo_nosotros)):?>
                         <h2><?php echo $titulo_nosotros;?></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio, auctor vitae faucibus fringilla.</p>
+                        <p><?php the_field('texto-nosotros');?></p>
                         <?php else:?>
                             <h2>NOSOTROS</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio, auctor vitae faucibus fringilla.</p>
@@ -82,15 +82,13 @@
                 <div class="col-xl-6" id="col-nosotros">
                     <div class="imagen-nosotros">
                         <div class="tarjeta-nosotros">
-                            <i class="bi bi-heart-fill"></i>
-                            <span>Ayudamos de corazón</span>
+                            <span><?php the_field('textoimagen1');?></span>
                         </div>
                         <div class="tarjeta-tiempo">
-                            <i class="bi bi-hourglass-bottom"></i>
-                            <span>Entrena a tu ritmo</span>
+                            <span><?php the_field('textoimagen2');?></span>
                         </div>
-                        <img src="<?php echo IMAGES;?>/imagen1.png" id="imagen-1" alt="persona-gym">
-                        <img src="<?php echo IMAGES; ?>/imagen2.png" id="imagen-2" alt="persona-gym2">
+                        <img src="<?php the_field('imagen1');?>" id="imagen-1" alt="persona-gym">
+                        <img src="<?php the_field('imagen2');?>" id="imagen-2" alt="persona-gym2">
                     </div>
                 </div>
             </div>
@@ -104,8 +102,10 @@
                 <div class="col-xl-6">
                     <div class="titulo-nosotros">
                     <?php if(isset( $titulo_acerca)):?>
-                        <h2><?php echo  $titulo_acerca;?></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio, auctor vitae faucibus fringilla.</p>
+                        <h2 id="titulo-acerca"><?php echo  $titulo_acerca;?></h2>
+                        
+                        <p><?php the_field('textoacerca');?></p>
+
                         <?php else:?>
                             <h2>ACERCA</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio, auctor vitae faucibus fringilla.</p>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="imagen-acerca">
-                        <img src="<?php echo IMAGES;?>/pesas.png" alt="pesas.png">
+                        <img src="<?php the_field('imagenacerca');?>" alt="pesas.png">
                     </div>
                     <div class="container">
                     <div class="grafica">
@@ -122,8 +122,8 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="texto-acerca">
-                                    <h2>Satisfacción</h2>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in auctor purus. Nunc dignissim quam eget feugiat sollicitudin. Maecenas arcu odio.</span>
+                                    <h2><?php the_field('titulotarjetaacerca');?></h2>
+                                    <span><?php the_field('textotarjetaacerca');?></span>
                                 </div>
 
                             </div>
@@ -150,7 +150,7 @@
     <section class="programas">
         <div class="container">
             <div class="texto-programas">
-                <h2>PROGRAMAS</h2>
+                <h2><?php the_field('tituloseccion3');?></h2>
             </div>
             
             <?php $planes = new WP_query(array(

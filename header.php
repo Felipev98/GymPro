@@ -29,30 +29,12 @@
       <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container-fluid">
               
-              <img src="<?php echo $logo_url;?>" class="navbar-brand" alt="logo.png">
+              <img src="<?php echo $logo_url;?>" id="logo-navbar" class="navbar-brand" alt="logo.png">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <?php  wp_nav_menu(array('theme_location' => 'menu-principal', 'menu_class' => 'collapse navbar-collapse justify-content-end' ,'menu_id' =>  'navbarSupportedContent' ))?>
               </div>
-              <!-- <?php get_search_form();?> -->
           </nav>
     </header>   
 
-                <!-- <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12">
-                    <div class="card card-inverse card-primary text-center">
-                        <img src="<?php echo IMAGES;?>/cardio.png" alt="cardio.png">
-                        <h4 class="card-title">This is Card #2</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12">
-                        <div class="card card-inverse card-primary text-center">
-                            <img src="<?php echo IMAGES;?>/levantarpesas.png" alt="levantar.png">
-                            <h4 class="card-title">This is Card #2</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    
-                        </div>
-                        </div>
-                </div> -->
