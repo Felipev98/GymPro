@@ -15,6 +15,10 @@ a{
 }
 body{
     background: #0A043C ;
+    scroll-behavior: smooth;
+}
+li{
+  padding: 0.4rem;
 }
 .navbar{
     padding-right: 2rem;
@@ -175,7 +179,7 @@ body{
     font-size:0.8rem;
     opacity: 80%;
     color: white;
-    text-align: center;
+    text-align: left;
   }
   .tarjeta-tiempo{
     position: absolute;
@@ -421,8 +425,19 @@ ul li a:hover{
 #block-4{
 margin-top: 2rem;
 }
+#boton-hero{
+  display:block;
+}
   /* Media Queries */
-
+  @media screen and (max-width:1280px){
+    div.container-fluid{
+      display: block !important;
+    }
+    #navbarSupportedContent{
+      padding: 1rem;
+      background: #FFC107;
+    }
+  }
   @media screen and (min-width:701px) and (max-width:1023px){
     .texto-banner{
       margin-top:7rem;
@@ -480,11 +495,11 @@ margin-top: 2rem;
       width: 22rem;
     }
     .tarjeta-nosotros{
-      top: 6rem;
+      top: 11rem;
       left: 14rem;
     }
     .tarjeta-tiempo{
-      top: 24rem;
+      top: 30rem;
       left: 14rem;
     }
     #imagen-2{
@@ -552,15 +567,18 @@ text-align: center;
     }
     .tarjeta-nosotros{
       left: 22rem;
+      top: 8rem;
     }
     #imagen-2{
       left: 20rem;
+      top: 14rem;
     }
     .tarjeta-tiempo{
       left: 22rem;
+      top: 23rem;
     }
     #titulo-acerca{
-      margin-top: 6rem;
+      margin-top: 14rem;
     }
     .card{
       height: auto;
@@ -579,6 +597,12 @@ text-align: center;
   div.widget.widget_block.widget_text p {
     text-align: center;
     
+      }
+      .titulo-nosotros p{
+        text-align: center;
+      }
+      .programas{
+        margin-top: 23rem;
       }
   }
   
@@ -638,11 +662,11 @@ text-align: center;
       display: block;
     }
     .tarjeta-nosotros{
-      top: 21rem;
+      top: 25rem;
       left: 5rem;
     }
     .tarjeta-tiempo{
-      top: 31rem;
+      top: 40rem;
       left: 5rem;
     }
     #imagen-1{
@@ -655,7 +679,7 @@ text-align: center;
       position: static;
     }
     .nosotros{
-      height: 49rem;
+      height: auto;
     }
     .titulo-nosotros{
       text-align: center;
@@ -683,6 +707,9 @@ text-align: center;
   }
   .titulo-nosotros h2{
     font-size:2.4rem;
+  }
+  .titulo-nosotros p{
+    text-align: center;
   }
   .programas{
     height: 82rem;
@@ -779,7 +806,7 @@ div.widget.widget_block.widget_text p {
     width: 18rem;
   }
   }
- 
+
   
   #particles-js{
   position: absolute;

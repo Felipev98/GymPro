@@ -65,7 +65,7 @@
             }
                 ?>
 <?php if( $show_nosotros_section == true):?>
-    <section class="nosotros">
+    <section class="nosotros" id="nosotros">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -96,7 +96,7 @@
     </section>
     <?php endif;?>
     <?php if( $show_acerca_section == true):?>
-    <section class="acerca">
+    <section class="acerca" id="acerca">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -147,7 +147,7 @@
         </div>
     </section>
     <?php endif;?>
-    <section class="programas">
+    <section class="programas" id="planes">
         <div class="container">
             <div class="texto-programas">
                 <h2><?php the_field('tituloseccion3');?></h2>
@@ -174,7 +174,7 @@
         <?php endwhile;?>
     </section>
     <?php endif;?>
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -182,12 +182,13 @@
                         <h2>CONTACTO</h2>
                     </div>
                     <div class="input-contacto">
-                        <form action="">
-                            <input type="text" placeholder="Nombre y apellido">
-                            <input type="text" placeholder="Email">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+                        <form action="https://formsubmit.co/felipe_v_spd@hotmail.com" method="POST">
+                            <input type="text" placeholder="Nombre y apellido" name="name" required>
+                            <input type="text" placeholder="Email" name="email" required>
+                            <textarea name="message" id="" cols="30" rows="10" required placeholder="Escriba su mensaje"></textarea>
+                            <button type="submit">Enviar</button>
+
                         </form>
-                        <button type="submit">Enviar</button>
 
                     </div>
                 </div>
