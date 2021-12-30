@@ -31,6 +31,7 @@ _Este proyecto fue construido con:_
 - 🟢 Cambio de Navbar y Footer.
 - 🟢 Cambio de Logo.
 - 🟢 Cambio de URL.
+- 🟢 Creación de plugin Cards para información de planes.
 
 ![logo](https://user-images.githubusercontent.com/83327665/143157073-3e9382e1-0dc9-4a59-b42e-bad3c76a4e4f.png)
 
